@@ -9,13 +9,14 @@
 <body class="loggedin">
 <nav class="navtop">
     <div>
-        <h1>Website Title</h1>
+		<img src="images\logo_small.png" alt="Reservations" width="50" height="50" class="navbar-image">
+        <h1>RESERVATION</h1>
         <a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
         <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
     </div>
 </nav>
 <div class="content">
-    <h2>Home Page</h2>
+    <h2>Home</h2>
     <p>Welcome back, <?=$_SESSION['name']?>!</p>
 </div>
 </body>
