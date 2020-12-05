@@ -1,0 +1,54 @@
+body {
+    font-family: 'Bitter', serif;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.jumbotron {
+    text-align: center;
+    background: url('../img/restaurant.jpeg') center center no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.title {
+    margin-top: 120px;
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.col-md-4 {
+    text-align: center;
+}
+
+.img-small {
+    width: 100px;
+}
+
+.img-main {
+    width: 300px;
+}
+
+#restaurantInfo {
+    text-align: center;
+}
+
+.topTen {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.dropdown-menu {
+    width: 200px;
+}
+
+
+
+

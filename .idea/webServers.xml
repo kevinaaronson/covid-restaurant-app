@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="276022fa-1d78-4a1c-a03c-34f289ea2eaf" name="LAMP" url="http://localhost">
+        <fileTransfer mountedRoot="$PROJECT_DIR$/../covid-restaurant-app" accessType="MOUNT" port="0" />
+      </webServer>
+      <webServer id="b9a0da46-6f13-48cd-9b24-5706e4042873" name="Local" url="http://localhost:8000">
+        <fileTransfer accessType="LOCAL" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

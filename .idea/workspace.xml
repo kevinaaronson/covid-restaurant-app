@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f319428-ca0f-4dc2-8f29-a92c0d053906" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heroku_ff98c640c4089ab.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/screenshot1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/screenshot2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Restaurant.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Restaurant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CuisineTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/RestaurantTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ReviewTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/cuisine.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/cuisine.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/cuisine_edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/cuisine_edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/include/head_tag.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/include/head_tag.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/restaurant.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/restaurant.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/restaurant_edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/restaurant_edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/search_results.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/search_results.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/food.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/food.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/rice.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="dcfa5b6e-13d0-4579-80e6-d449c6548ca5" />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="6f39af3b-39a0-47e9-b603-00192ce9ae7b" name="localhost" port="8000" />
+    </servers>
+  </component>
+  <component name="PhpWebServerValidation" path_to_validation_script="$PROJECT_DIR$" selected_validation_type="LOCAL" web_path_to_validation_script="https://localhost:8000" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/pimple/pimple" />
+      <path value="$PROJECT_DIR$/vendor/silex/silex" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1l4rJBqyK67Psr8KYysWP0uuQ4q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../covid-restaurant-app-master" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8000">
+      <method v="2" />
+    </configuration>
+    <configuration name="php_server" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f319428-ca0f-4dc2-8f29-a92c0d053906" name="Default Changelist" comment="" />
+      <created>1606867130148</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606867130148</updated>
+      <workItem from="1606867132044" duration="1528000" />
+      <workItem from="1606869068119" duration="8630000" />
+      <workItem from="1606878965379" duration="12000" />
+      <workItem from="1606878995237" duration="223000" />
+      <workItem from="1606879219436" duration="32000" />
+      <workItem from="1606879252833" duration="46000" />
+      <workItem from="1606879315682" duration="442000" />
+      <workItem from="1606962396980" duration="2263000" />
+      <workItem from="1607102806225" duration="191000" />
+      <workItem from="1607103024709" duration="528000" />
+      <workItem from="1607103569871" duration="9502000" />
+      <workItem from="1607131841112" duration="12331000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2075" y="634" width="824" height="691" key="#CLI_Interpreters" timestamp="1606876270865">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state x="2075" y="634" width="824" height="691" key="#CLI_Interpreters/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606876270865" />
+    <state x="2609" y="505" width="800" height="684" key="#Deployment" timestamp="1606871174394">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state x="2609" y="505" width="800" height="684" key="#Deployment/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606871174394" />
+    <state x="2053" y="798" width="604" height="357" key="#Notifications" timestamp="1606875558115">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state x="2053" y="798" width="604" height="357" key="#Notifications/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606875558115" />
+    <state x="2005" y="597" width="700" height="759" key="#PHP" timestamp="1606867222472">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state x="2005" y="597" width="700" height="759" key="#PHP/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606867222472" />
+    <state x="2588" y="495" width="832" height="711" key="#SSH_Configurations" timestamp="1606871172813">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state x="2588" y="495" width="832" height="711" key="#SSH_Configurations/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606871172813" />
+    <state x="2155" y="788" width="400" height="284" key="#Scopes" timestamp="1607103109171">
+      <screen x="1080" y="225" width="2560" height="1440" />
+    </state>
+    <state x="2155" y="788" width="400" height="284" key="#Scopes/1080.225.2560.1440/0.0.1080.1629@1080.225.2560.1440" timestamp="1607103109171" />
+    <state x="2030" y="704" width="824" height="691" key="#Servers" timestamp="1606879664888">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state x="2030" y="704" width="824" height="691" key="#Servers/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606879664888" />
+    <state x="1914" y="634" key="#Test_Frameworks" timestamp="1606874294574">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state x="1914" y="634" key="#Test_Frameworks/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606874294574" />
+    <state x="1955" y="588" width="984" height="934" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607108560498">
+      <screen x="1080" y="225" width="2560" height="1440" />
+    </state>
+    <state x="1955" y="588" key="#com.intellij.execution.impl.EditConfigurationsDialog/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607108560498" />
+    <state x="1955" y="634" width="984" height="934" key="#com.intellij.execution.impl.EditConfigurationsDialog/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606879669747" />
+    <state x="2049" y="775" width="612" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607135325038">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state x="2049" y="775" width="612" height="403" key="#com.intellij.fileTypes.FileTypeChooser/1080.271.2560.1440/3640.631.1920.1080/0.0.1080.1675@1080.271.2560.1440" timestamp="1607135325038" />
+    <state x="2134" y="728" width="451" height="588" key="#com.intellij.ide.util.MemberChooser" timestamp="1607144815967">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state x="2134" y="682" width="441" height="588" key="#com.intellij.ide.util.MemberChooser/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607110705528" />
+    <state x="2134" y="728" width="451" height="588" key="#com.intellij.ide.util.MemberChooser/1080.271.2560.1440/3640.631.1920.1080/0.0.1080.1675@1080.271.2560.1440" timestamp="1607144815967" />
+    <state x="2078" y="797" width="626" height="368" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1606876827262">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state x="2078" y="797" width="626" height="368" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606876827262" />
+    <state x="2095" y="887" width="520" height="281" key="ComposerInitDialogKey" timestamp="1606869437760">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state x="2095" y="887" width="520" height="281" key="ComposerInitDialogKey/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606869437760" />
+    <state x="2143" y="731" width="424" height="491" key="FileChooserDialogImpl" timestamp="1607107946340">
+      <screen x="1080" y="225" width="2560" height="1440" />
+    </state>
+    <state x="2143" y="685" width="424" height="520" key="FileChooserDialogImpl/1080.225.2560.1440/0.0.1080.1629@1080.225.2560.1440" timestamp="1607103527973" />
+    <state x="2143" y="731" width="424" height="491" key="FileChooserDialogImpl/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607107946340" />
+    <state x="2143" y="731" width="424" height="491" key="FileChooserDialogImpl/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606879297029" />
+    <state width="2514" height="480" key="GridCell.Tab.0.bottom" timestamp="1606878825623">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state width="2514" height="480" key="GridCell.Tab.0.bottom/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606878825623" />
+    <state width="2514" height="480" key="GridCell.Tab.0.center" timestamp="1606878825623">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state width="2514" height="480" key="GridCell.Tab.0.center/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606878825623" />
+    <state width="2514" height="480" key="GridCell.Tab.0.left" timestamp="1606878825623">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state width="2514" height="480" key="GridCell.Tab.0.left/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606878825623" />
+    <state width="2514" height="480" key="GridCell.Tab.0.right" timestamp="1606878825623">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state width="2514" height="480" key="GridCell.Tab.0.right/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606878825623" />
+    <state width="2514" height="480" key="GridCell.Tab.1.bottom" timestamp="1606878825623">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state width="2514" height="480" key="GridCell.Tab.1.bottom/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606878825623" />
+    <state width="2514" height="480" key="GridCell.Tab.1.center" timestamp="1606878825623">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state width="2514" height="480" key="GridCell.Tab.1.center/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606878825623" />
+    <state width="2514" height="480" key="GridCell.Tab.1.left" timestamp="1606878825623">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state width="2514" height="480" key="GridCell.Tab.1.left/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606878825623" />
+    <state width="2514" height="480" key="GridCell.Tab.1.right" timestamp="1606878825623">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state width="2514" height="480" key="GridCell.Tab.1.right/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606878825623" />
+    <state width="2514" height="480" key="GridCell.Tab.2.bottom" timestamp="1606878825623">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state width="2514" height="480" key="GridCell.Tab.2.bottom/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606878825623" />
+    <state width="2514" height="480" key="GridCell.Tab.2.center" timestamp="1606878825623">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state width="2514" height="480" key="GridCell.Tab.2.center/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606878825623" />
+    <state width="2514" height="480" key="GridCell.Tab.2.left" timestamp="1606878825623">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state width="2514" height="480" key="GridCell.Tab.2.left/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606878825623" />
+    <state width="2514" height="480" key="GridCell.Tab.2.right" timestamp="1606878825623">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state width="2514" height="480" key="GridCell.Tab.2.right/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606878825623" />
+    <state width="331" height="500" key="HiddenNamespacesPopup" timestamp="1607109987248">
+      <screen x="1080" y="225" width="2560" height="1440" />
+    </state>
+    <state width="331" height="500" key="HiddenNamespacesPopup/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607109987248" />
+    <state width="331" height="500" key="HiddenNamespacesPopup/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606963100636" />
+    <state x="1849" y="562" width="1022" height="737" key="SettingsEditor" timestamp="1607108079086">
+      <screen x="1080" y="225" width="2560" height="1440" />
+    </state>
+    <state x="1849" y="562" width="1022" height="737" key="SettingsEditor/1080.225.2560.1440/0.0.1080.1629@1080.225.2560.1440" timestamp="1607103510028" />
+    <state x="1849" y="562" key="SettingsEditor/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607108079086" />
+    <state x="1849" y="608" width="1287" height="737" key="SettingsEditor/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606876332117" />
+    <state x="1955" y="709" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1607145279749">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state x="1955" y="709" width="800" height="535" key="Vcs.Push.Dialog.v2/1080.271.2560.1440/3640.631.1920.1080/0.0.1080.1675@1080.271.2560.1440" timestamp="1607145279749" />
+    <state x="1943" y="631" width="824" height="691" key="com.intellij.database.dbimport.ImportDialog" timestamp="1607110010819">
+      <screen x="1080" y="225" width="2560" height="1440" />
+    </state>
+    <state x="1943" y="631" width="824" height="691" key="com.intellij.database.dbimport.ImportDialog/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607110010819" />
+    <state x="2093" y="735" width="524" height="391" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1607110005413">
+      <screen x="1080" y="225" width="2560" height="1440" />
+    </state>
+    <state x="2093" y="735" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607110005413" />
+    <state x="2093" y="781" width="524" height="391" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606963126600" />
+    <state x="2194" y="679" width="829" height="464" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1607140892610">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state x="2194" y="633" width="530" height="595" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1080.225.2560.1440/0.0.1080.1629@1080.225.2560.1440" timestamp="1607105969878" />
+    <state x="2194" y="679" width="829" height="464" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1080.271.2560.1440/3640.631.1920.1080/0.0.1080.1675@1080.271.2560.1440" timestamp="1607140892610" />
+    <state x="-532" y="0" width="2560" height="1170" maximized="true" key="dock-window-1" timestamp="1607134549401">
+      <screen x="0" y="0" width="1080" height="1675" />
+    </state>
+    <state x="0" y="0" width="1080" height="1360" key="dock-window-1/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607109631756" />
+    <state x="-532" y="0" width="2560" height="1170" maximized="true" key="dock-window-1/1080.271.2560.1440/3640.631.1920.1080/0.0.1080.1675@1080.271.2560.1440" timestamp="1607134549401" />
+    <state x="0" y="1115" width="1080" height="805" key="dock-window-2" timestamp="1607110364582">
+      <screen x="0" y="0" width="1080" height="1675" />
+    </state>
+    <state x="0" y="1115" width="1080" height="805" key="dock-window-2/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607110364582" />
+    <state x="2071" y="745" width="568" height="462" key="refactoring.ChangeSignatureDialog" timestamp="1607111884938">
+      <screen x="1080" y="225" width="2560" height="1440" />
+    </state>
+    <state x="2071" y="745" width="568" height="462" key="refactoring.ChangeSignatureDialog/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607111884938" />
+  </component>
+</project>
