@@ -13,7 +13,7 @@
 
 
 
-        function __construct ($id = null, $name, $address, $phone, $cuisine_id, $picture = "", $total_rating = 0, $rating_count = 0)
+        function __construct ($id = null, $name, $address, $phone, $cuisine_id, $picture = "", $total_rating = 0, $rating_count = 0, $description = "")
         {
             $this->id = $id;
             $this->name = $name;
@@ -23,20 +23,16 @@
             $this->picture = $picture;
             $this->total_rating = $total_rating;
             $this->rating_count = $rating_count;
+            $this->description = $description;
         }
 
-        /**
-         * @return mixed
-         */
-        public function getDescription()
+
+        function getDescription()
         {
             return $this->description;
         }
 
-        /**
-         * @param mixed $description
-         */
-        public function setDescription($description): void
+        function setDescription($description)
         {
             $this->description = $description;
         }
@@ -159,7 +155,8 @@
                 $picture = $restaurant['picture'];
                 $total_rating = $restaurant['total_rating'];
                 $rating_count = $restaurant['rating_count'];
-                $new_restaurant = new Restaurant($id, $name, $address, $phone, $cuisine_id, $picture, $total_rating, $rating_count);
+                $description = $restaurant['description'];
+                $new_restaurant = new Restaurant($id, $name, $address, $phone, $cuisine_id, $picture, $total_rating, $rating_count, $description);
                 array_push($restaurants, $new_restaurant);
             }
             return $restaurants;
@@ -179,7 +176,8 @@
                 $picture = $restaurant['picture'];
                 $total_rating = $restaurant['total_rating'];
                 $rating_count = $restaurant['rating_count'];
-                $new_restaurant = new Restaurant($id, $name, $address, $phone, $cuisine_id, $picture, $total_rating, $rating_count);
+                $description = $restaurant['description'];
+                $new_restaurant = new Restaurant($id, $name, $address, $phone, $cuisine_id, $picture, $total_rating, $rating_count, $description);
                 array_push($restaurants, $new_restaurant);
             }
             return $restaurants;
@@ -199,7 +197,8 @@
                 $picture = $restaurant['picture'];
                 $total_rating = $restaurant['total_rating'];
                 $rating_count = $restaurant['rating_count'];
-                $new_restaurant = new Restaurant($id, $name, $address, $phone, $cuisine_id, $picture, $total_rating, $rating_count);
+                $description = $restaurant['description'];
+                $new_restaurant = new Restaurant($id, $name, $address, $phone, $cuisine_id, $picture, $total_rating, $rating_count, $description);
                 array_push($restaurants, $new_restaurant);
             }
             return $restaurants;
@@ -253,6 +252,24 @@
                 array_push($reviews, $new_review);
             }
             return $reviews;
+        }
+        function findReservations()
+        {
+            $returned_reservations = $GLOBALS['DB']->query("SELECT * FROM reservations WHERE restaurant_id = {$this->getId()} ORDER BY id DESC;");
+
+            $reservations = array();
+            foreach($returned_reservations as $reservation) {
+                $id = $reservation['id'];
+                $date = $reservation['date'];
+                $time = $reservation['time'];
+                $name = $reservation['name'];
+                $email = $reservation['email'];
+                $party = $reservation['party'];
+                $restaurant_id = $reservation['restaurant_id'];
+                $new_reservation = new Reservation($id, $date,$time, $name, $email,$party, $restaurant_id);
+                array_push($reservations, $new_reservation);
+            }
+            return $reservations;
         }
 
         static function searchByName($search_term)

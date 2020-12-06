@@ -13,7 +13,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a href='/'><img class='navbar-brand' src='/../img/tex.jpg'></a>
-                    <a class="navbar-brand" href="/">Texas Restaurant Reservations, Ratings & Relief</a>
+                    <a class="navbar-brand" href="/">Texas Restaurant Reservations</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="cuisineEditNav">
@@ -47,26 +47,89 @@
                 </div>
             </div>
         </nav>
-        <h1>Restaurant Reviewer</h1>
-        <h2>Edit {{ cuisine.getName }}</h2>
+        <h1>{{ restaurant.getName }} Profile</h1><br>
         <form class="" action="/restaurant/{{ restaurant.getId }}" method="post">
             <input type='hidden' name='_method' value='patch'>
             <label for="edit_name">Name</label>
-            <input type="text" name="edit_name" value='{{ restaurant.getName }}' required>
+            <input type="text" name="edit_name" value='{{ restaurant.getName }}' required><br><br>
             <label for="edit_address">Location</label>
-            <input type="text" name="edit_address" value='{{ restaurant.getAddress }}'>
+            <input type="text" name="edit_address" value='{{ restaurant.getAddress }}'><br><br>
             <label for="edit_phone">Phone Number</label>
-            <input type="text" name="edit_phone" value='{{ restaurant.getPhone }}'>
+            <input type="text" name="edit_phone" value='{{ restaurant.getPhone }}'><br><br>
             <label for="edit_picture">Image URL</label>
-            <input type="text" name="edit_picture" value='{{ restaurant.getPicture }}'>
+            <input type="text" name="edit_picture" value='{{ restaurant.getPicture }}'><br><br>
+            <label for="edit_phone">Description</label>
+            <input type="text" name="edit_description" value='{{ restaurant.getDescription }}'><br><br><br>
             <input type="hidden" name="edit_cuisine_id" value="{{ cuisine.getId }}">
             <button type="submit" name="button">Edit</button>
         </form>
+        <br>
 
         <form class="" action="/restaurant/{{ restaurant.getId }}/delete" method="post">
             <input type="hidden" name="_method" value="delete">
             <button type="submit">Delete</button>
         </form>
+        <br>
+        <div id='reservationInfo'>
+            {% if reservations is not empty %}
+                <h3>Current Reservations</h3>
+                <ul>
+                    {% for reservation in reservations %}
+                        <li>
+                            <div class='well'>
+                                <h4>Name: {{ reservation.getName }}</h4>
+                                <h4>Date: {{ reservation.getDate }}</h4>
+                                <h4>Time: {{ reservation.getTime }}</h4>
+                                <h4>Number in party: {{ reservation.getParty }}</h4>
+                                <p>Email: {{ reservation.getEmail }}</p>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div><br><br>
+
+
+
+
+        <div id="smart-button-container">
+            <div style="text-align: center;">
+                <div id="paypal-button-container"></div>
+            </div>
+        </div>
+        <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+
+        <script>
+            function initPayPalButton() {
+                paypal.Buttons({
+                    style: {
+                        shape: 'rect',
+                        color: 'gold',
+                        layout: 'vertical',
+                        label: 'paypal',
+
+                    },
+
+                    createOrder: function(data, actions) {
+                        return actions.order.create({
+                            purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
+                        });
+                    },
+
+                    onApprove: function(data, actions) {
+                        return actions.order.capture().then(function(details) {
+                            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                        });
+                    },
+
+                    onError: function(err) {
+                        console.log(err);
+                    }
+                }).render('#paypal-button-container');
+            }
+            initPayPalButton();
+        </script>
+
     </div>
 </body>
 </html>

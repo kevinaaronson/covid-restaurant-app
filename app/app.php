@@ -45,7 +45,7 @@ require_once __DIR__."/../src/Reservation.php";
     });
 
     $app->post("/cuisine/{id}", function($id) use ($app) {
-        $new_restaurant = new Restaurant($restaurant_id = null, $_POST['new_name'], $_POST['new_address'], $_POST['new_phone'], $_POST['cuisine_id'], $_POST['new_picture'],$_POST['new_email'].$_POST['new_password']);
+        $new_restaurant = new Restaurant($restaurant_id = null, $_POST['new_name'], $_POST['new_address'], $_POST['new_phone'], $_POST['cuisine_id'], $_POST['new_picture']);
         $new_restaurant->save();
         $cuisine = Cuisine::find($id);
         $cuisines = Cuisine::getAll();
@@ -98,7 +98,8 @@ require_once __DIR__."/../src/Reservation.php";
         $restaurant = Restaurant::find($id);
         $cuisine = Cuisine::find($restaurant->getCuisineId());
         $cuisines = Cuisine::getAll();
-        return $app['twig']->render('restaurant_edit.html.twig', array ('restaurant' => $restaurant, 'cuisine' => $cuisine, 'cuisines' => $cuisines));
+        $reservations = $restaurant->findReservations();
+        return $app['twig']->render('restaurant_edit.html.twig', array ('restaurant' => $restaurant, 'reservations' => $reservations,'cuisine' => $cuisine, 'cuisines' => $cuisines));
     });
 
     $app->post("/restaurant/{id}/delete", function($id) use ($app) {
@@ -122,9 +123,9 @@ require_once __DIR__."/../src/Reservation.php";
 
     $app->post("/restaurant/{id}/submit_reservation", function($id) use ($app) {
         $restaurant = Restaurant::find($id);
-        $new_reservation = new Reservation($id = null, $_POST['date'], $_POST['time'], $_POST['name'],$_POST['email'], $_POST['party'], $_POST['comments'], $restaurant->getId());
+        $new_reservation = new Reservation($id = null, $_POST['date'], $_POST['time'], $_POST['name'],$_POST['email'], $_POST['party'],$restaurant->getId());
         $new_reservation->save();
-        $reviews = $restaurant->findReviews();
+        mail($new_reservation->getEmail(), "Details for reservation to ".$restaurant->getName(), "A reservation for ".$new_reservation->getParty()." has been set for ".$new_reservation->getDate()." at ".$new_reservation->getTime().".\nPlease arrive 15 minutes before reservation time. Have fun!");
         $cuisines = Cuisine::getAll();
         $cuisine = Cuisine::find($restaurant->getCuisineId());
         $reviews = $restaurant->findReviews();

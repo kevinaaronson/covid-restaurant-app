@@ -13,7 +13,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a href='/'><img class='navbar-brand' src='/../img/tex.jpg'></a>
-                    <a class="navbar-brand" href="/">Texas Restaurant Reservations, Ratings & Relief</a>
+                    <a class="navbar-brand" href="/">Texas Restaurant Reservations</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="restaurantNav">
@@ -26,7 +26,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="/">Home</a></li>
                         <li><a href='/cuisine/{{ cuisine.getId }}'>Back</a></li>
-                        <li><a href='/restaurant/{{ restaurant.getId }}/edit'>Edit Restaurant</a></li>
+                        <li><a href='/restaurant/{{ restaurant.getId }}/edit'>Edit Profile</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cuisines <span class="caret"></span></a>
                             <ul class="dropdown-menu">
@@ -64,7 +64,7 @@
                     {% else %}
                     <h3>Rating: {{ restaurant.getRating }}</h3>
                     <h4>Number of Reviews: {{ restaurant.getRatingCount }}</h4>
-
+                        <br>
                     {% endif %}
                 </div>
 
@@ -90,36 +90,36 @@
                 </form>
 
             </div>
+            &nbsp
             <div class='col-md-push-3'>
-                <form class="well" action="/restaurant/{{ restaurant.getId }}/submit_reservation" method="post">
-                    <h3>Reserve a table at {{ restaurant.getName }}</h3>
-                    <h6>*Reservation must be placed at least 24 hours in advance*</h6>
-                    <div class='form-group'>
-                        <label for="name">Name</label>
-                        <input type="text" name="name" class='form-control'>
-                    </div>
-                    <div class='form-group'>
-                        <label for="date">Date</label>
-                        <input type="date" name="date" class='form-control'>
-                    </div>
-                    <div class='form-group'>
-                        <label for="time">Time</label>
-                        <input type="time" name="time" class='form-control'>
-                    </div>
-                    <div class='form-group'>
-                        <label for="party">Number in party</label>
-                        <input type="number" name="party" class='form-control'>
-                    </div>
-                    <div class='form-group'>
-                        <label for="email">Email</label>
-                        <input type="text" name="email" class='form-control'>
-                    </div>
-                    <div class='form-group'>
-                        <label for="comments">Comments</label>
-                        <textarea rows='4' type="text" name="comments" class='form-control'></textarea>
-                    </div>
-                    <button type="submit" class='btn btn-primary'>Submit Reservation</button>
-                </form>
+                <br>
+                <div class='well'>
+                    <form class="" action="/restaurant/{{ restaurant.getId }}/submit_reservation" method="post">
+                        <h3>Reserve a table at {{ restaurant.getName }}</h3>
+                        <h6>*Reservation must be placed at least 24 hours in advance*</h6>
+                        <div class='form-group'>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" class='form-control'>
+                        </div>
+                        <div class='form-group'>
+                            <label for="date">Date</label>
+                            <input type="date" name="date" class='form-control'>
+                        </div>
+                        <div class='form-group'>
+                            <label for="time">Time</label>
+                            <input type="time" name="time" class='form-control'>
+                        </div>
+                        <div class='form-group'>
+                            <label for="party">Number in party</label>
+                            <input type="number" name="party" class='form-control'>
+                        </div>
+                        <div class='form-group'>
+                            <label for="email">Email</label>
+                            <input type="text" name="email" class='form-control'>
+                        </div>
+                        <button type="submit" class='btn btn-primary'>Submit Reservation</button>
+                    </form>
+                </div>
 
             </div>
             {% if reviews is not empty %}

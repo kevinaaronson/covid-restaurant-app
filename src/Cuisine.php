@@ -77,7 +77,8 @@
                 $picture = $restaurant['picture'];
                 $total_rating = $restaurant['total_rating'];
                 $rating_count = $restaurant['rating_count'];
-                $new_restaurant = new Restaurant($id, $name, $address, $phone, $cuisine_id, $picture, $total_rating, $rating_count);
+                $description = $restaurant['description'];
+                $new_restaurant = new Restaurant($id, $name, $address, $phone, $cuisine_id, $picture, $total_rating, $rating_count, $description);
                 array_push($restaurants, $new_restaurant);
             }
             return $restaurants;
