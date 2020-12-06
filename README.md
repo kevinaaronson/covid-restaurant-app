@@ -1,1 +1,1 @@
-To be editted soon
+To be edited soon
