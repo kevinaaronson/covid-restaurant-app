@@ -72,7 +72,9 @@
         <br>
         <div id='reservationInfo'>
             {% if reservations is not empty %}
+            <div style="text-align: center;">
                 <h3>Current Reservations</h3>
+            </div><br>
                 <ul>
                     {% for reservation in reservations %}
                         <li>
@@ -89,6 +91,20 @@
             {% endif %}
         </div><br><br>
 
+        <div style="text-align: center;">
+            <h3>Update Subscription</h3>
+        </div><br>
+
+        <div id="smart-button-container">
+            <div style="text-align: center;">
+                <div style="margin-bottom: 1.25rem;">
+                    <p>Subscription, Billed Monthly or Yearly. Cancel any time.</p>
+                    <select id="item-options"><option value="Monthly" price="10.99">Monthly - 10.99 USD</option><option value="Yearly(1 Month Free)" price="119.99">Yearly(1 Month Free) - 119.99 USD</option><option value="Yearly(1 Month Free)" price="119.99">Cancel</option></select>
+                    <select style="visibility: hidden" id="quantitySelect"></select>
+                </div>
+                <div id="paypal-button-container"></div>
+            </div>
+        </div>
 
 
 

@@ -19,7 +19,6 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="@" />
-            <name qname="restaurant_app" />
             <name qname="restaurants" />
           </node>
         </introspection-scope>

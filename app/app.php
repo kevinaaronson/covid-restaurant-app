@@ -3,8 +3,8 @@
     require_once __DIR__."/../src/Review.php";
     require_once __DIR__."/../src/Restaurant.php";
     require_once __DIR__."/../src/Cuisine.php";
-require_once __DIR__."/../src/Reservation.php";
-    date_default_timezone_set('America/Belton');
+    require_once __DIR__."/../src/Reservation.php";
+    date_default_timezone_set('America/Texas');
 
     use Symfony\Component\Debug\Debug;
     Debug::enable();
@@ -21,6 +21,41 @@ require_once __DIR__."/../src/Reservation.php";
     $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/../views'
     ));
+
+
+    /*$app->register(new Silex\Provider\SecurityServiceProvider(), array(
+        'security.firewalls' => [
+            'general' => [
+                'pattern' => '^/',
+                'anonymous' => true,
+                'form' => [
+                    'login_path' => '/login',
+                    'check_path' => '/account/login_check',
+                    'always_use_default_target_path' => true,
+                    'default_target_path' => '/account/home'
+                ],
+                'logout' => [
+                    'logout_path' => '/account/logout',
+                    'target_url' => '/login',
+                    'invalidate_session' => true
+                ],
+                'users' => [
+                    'admin' => ['ROLE_ADMIN', '$2y$10$3i9/lVd8UOFIJ6PAMFt8gu3/r5g0qeCJvoSlLCsvMTythye19F77a'],
+                ]
+            ]
+        ],
+        'security.access_rules' => [
+            ['^/account', 'ROLE_ADMIN']
+        ],
+        'security.role_hierarchy' => [
+            'ROLE_ADMIN' => [
+                'ROLE_USER',
+                'ROLE_ALLOWED_TO_SWITCH'
+            ],
+        ]
+    ));
+    */
+
 
     $app->get("/", function() use ($app) {
         $cuisines = Cuisine::getAll();
@@ -87,7 +122,7 @@ require_once __DIR__."/../src/Reservation.php";
 
     $app->post("/restaurant/{id}", function($id) use ($app) {
         $restaurant = Restaurant::find($id);
-        $restaurant->updateRestaurant($_POST['edit_name'], $_POST['edit_address'], $_POST['edit_phone'], $_POST['edit_cuisine_id'], $_POST['edit_picture']);
+        $restaurant->updateRestaurant($_POST['edit_name'], $_POST['edit_address'], $_POST['edit_phone'], $_POST['edit_cuisine_id'], $_POST['edit_picture'],$_POST['edit_description']);
         $cuisine = Cuisine::find($restaurant->getCuisineId());
         $reviews = $restaurant->findReviews();
         $cuisines = Cuisine::getAll();
@@ -98,6 +133,7 @@ require_once __DIR__."/../src/Reservation.php";
         $restaurant = Restaurant::find($id);
         $cuisine = Cuisine::find($restaurant->getCuisineId());
         $cuisines = Cuisine::getAll();
+
         $reservations = $restaurant->findReservations();
         return $app['twig']->render('restaurant_edit.html.twig', array ('restaurant' => $restaurant, 'reservations' => $reservations,'cuisine' => $cuisine, 'cuisines' => $cuisines));
     });
@@ -139,6 +175,8 @@ require_once __DIR__."/../src/Reservation.php";
         $cuisines = Cuisine::getAll();
         return $app['twig']->render('search_results.html.twig', array ('restaurants' => $matches, 'cuisines' => $cuisines));
     });
+
+
 
     return $app;
 ?>

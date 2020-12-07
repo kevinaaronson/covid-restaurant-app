@@ -5,8 +5,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f319428-ca0f-4dc2-8f29-a92c0d053906" name="Default Changelist" comment="Implemented reservations">
+    <list default="true" id="0f319428-ca0f-4dc2-8f29-a92c0d053906" name="Default Changelist" comment="Remove Tutorial Readme">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eab2b938-76e8-4fae-8b8a-8bbae8eb4dfb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eab2b938-76e8-4fae-8b8a-8bbae8eb4dfb.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Restaurant.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Restaurant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/restaurant_edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/restaurant_edit.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +121,8 @@
       <workItem from="1607103024709" duration="528000" />
       <workItem from="1607103569871" duration="9502000" />
       <workItem from="1607131841112" duration="13466000" />
-      <workItem from="1607279994099" duration="15098000" />
+      <workItem from="1607279994099" duration="20367000" />
+      <workItem from="1607369930857" duration="6969000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented reservations">
       <created>1607296275025</created>
@@ -125,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607296275025</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Remove Tutorial Readme">
+      <created>1607297056910</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607297056910</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +158,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implemented reservations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented reservations" />
+    <MESSAGE value="Remove Tutorial Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove Tutorial Readme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2075" y="634" width="824" height="691" key="#CLI_Interpreters" timestamp="1606876270865">
@@ -257,10 +271,10 @@
       <screen x="1080" y="271" width="2560" height="1440" />
     </state>
     <state width="2514" height="480" key="GridCell.Tab.2.right/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606878825623" />
-    <state width="331" height="500" key="HiddenNamespacesPopup" timestamp="1607109987248">
+    <state width="331" height="500" key="HiddenNamespacesPopup" timestamp="1607370633794">
       <screen x="1080" y="225" width="2560" height="1440" />
     </state>
-    <state width="331" height="500" key="HiddenNamespacesPopup/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607109987248" />
+    <state width="331" height="500" key="HiddenNamespacesPopup/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607370633794" />
     <state width="331" height="500" key="HiddenNamespacesPopup/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606963100636" />
     <state x="1351" y="734" width="728" height="485" key="MultipleFileMergeDialog" timestamp="1607296827307">
       <screen x="1080" y="271" width="2560" height="1440" />
@@ -272,11 +286,15 @@
     <state x="1849" y="562" width="1022" height="737" key="SettingsEditor/1080.225.2560.1440/0.0.1080.1629@1080.225.2560.1440" timestamp="1607103510028" />
     <state x="1849" y="562" key="SettingsEditor/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607108079086" />
     <state x="1849" y="608" width="1287" height="737" key="SettingsEditor/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606876332117" />
-    <state x="1955" y="709" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1607296844782">
+    <state x="1955" y="709" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1607297060952">
       <screen x="1080" y="271" width="2560" height="1440" />
     </state>
-    <state x="1955" y="709" width="800" height="535" key="Vcs.Push.Dialog.v2/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1607296844782" />
+    <state x="1955" y="709" width="800" height="535" key="Vcs.Push.Dialog.v2/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1607297060952" />
     <state x="1955" y="709" width="800" height="535" key="Vcs.Push.Dialog.v2/1080.271.2560.1440/3640.631.1920.1080/0.0.1080.1675@1080.271.2560.1440" timestamp="1607145279749" />
+    <state x="2217" y="862" width="367" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1607370626375">
+      <screen x="1080" y="225" width="2560" height="1440" />
+    </state>
+    <state x="2217" y="862" width="367" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607370626375" />
     <state x="1943" y="631" width="824" height="691" key="com.intellij.database.dbimport.ImportDialog" timestamp="1607110010819">
       <screen x="1080" y="225" width="2560" height="1440" />
     </state>
@@ -286,30 +304,35 @@
     </state>
     <state x="2093" y="735" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607110005413" />
     <state x="2093" y="781" width="524" height="391" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1606963126600" />
-    <state x="2194" y="679" width="626" height="591" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1607288523447">
-      <screen x="1080" y="271" width="2560" height="1440" />
-    </state>
-    <state x="2194" y="633" width="530" height="595" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1080.225.2560.1440/0.0.1080.1629@1080.225.2560.1440" timestamp="1607105969878" />
-    <state x="2194" y="679" width="626" height="591" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1607288523447" />
-    <state x="2194" y="679" width="829" height="464" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1080.271.2560.1440/3640.631.1920.1080/0.0.1080.1675@1080.271.2560.1440" timestamp="1607140892610" />
-    <state x="1501" y="888" width="437" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607296803112">
-      <screen x="1080" y="271" width="2560" height="1440" />
-    </state>
-    <state x="1501" y="888" width="437" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1607296803112" />
-    <state x="3921" y="631" width="1471" height="1080" key="dock-window-1" timestamp="1607285065135">
-      <screen x="3640" y="631" width="1920" height="1080" />
-    </state>
-    <state x="0" y="0" width="1080" height="1360" key="dock-window-1/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607109631756" />
-    <state x="3921" y="631" width="1471" height="1080" key="dock-window-1/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1607285065135" />
-    <state x="-532" y="0" width="2560" height="1170" maximized="true" key="dock-window-1/1080.271.2560.1440/3640.631.1920.1080/0.0.1080.1675@1080.271.2560.1440" timestamp="1607134549401" />
-    <state x="1725" y="444" width="1471" height="1080" key="dock-window-2" timestamp="1607291730215">
-      <screen x="1080" y="271" width="2560" height="1440" />
-    </state>
-    <state x="0" y="1115" width="1080" height="805" key="dock-window-2/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607110364582" />
-    <state x="1725" y="444" width="1471" height="1080" key="dock-window-2/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1607291730215" />
-    <state x="2071" y="745" width="568" height="462" key="refactoring.ChangeSignatureDialog" timestamp="1607111884938">
+    <state x="2194" y="633" width="626" height="591" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1607378501266">
       <screen x="1080" y="225" width="2560" height="1440" />
     </state>
-    <state x="2071" y="745" width="568" height="462" key="refactoring.ChangeSignatureDialog/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607111884938" />
+    <state x="2194" y="633" width="530" height="595" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1080.225.2560.1440/0.0.1080.1629@1080.225.2560.1440" timestamp="1607105969878" />
+    <state x="2194" y="633" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607378501266" />
+    <state x="2194" y="679" width="626" height="591" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1607288523447" />
+    <state x="2194" y="679" width="829" height="464" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1080.271.2560.1440/3640.631.1920.1080/0.0.1080.1675@1080.271.2560.1440" timestamp="1607140892610" />
+    <state x="150" y="573" width="770" height="780" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1607300873823">
+      <screen x="0" y="0" width="1080" height="1675" />
+    </state>
+    <state x="150" y="573" width="770" height="780" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1607300873823" />
+    <state x="1501" y="888" width="437" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607297174500">
+      <screen x="1080" y="271" width="2560" height="1440" />
+    </state>
+    <state x="1501" y="888" width="437" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1607297174500" />
+    <state x="0" y="0" width="1080" height="934" maximized="true" key="dock-window-1" timestamp="1607376418409">
+      <screen x="0" y="0" width="1080" height="1675" />
+    </state>
+    <state x="0" y="0" width="1080" height="934" maximized="true" key="dock-window-1/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607376418409" />
+    <state x="3921" y="631" width="1471" height="1080" key="dock-window-1/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1607285065135" />
+    <state x="-532" y="0" width="2560" height="1170" maximized="true" key="dock-window-1/1080.271.2560.1440/3640.631.1920.1080/0.0.1080.1675@1080.271.2560.1440" timestamp="1607134549401" />
+    <state x="3919" y="615" width="1471" height="1080" maximized="true" key="dock-window-2" timestamp="1607370285722">
+      <screen x="1080" y="225" width="2560" height="1440" />
+    </state>
+    <state x="3919" y="615" width="1471" height="1080" maximized="true" key="dock-window-2/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607370285722" />
+    <state x="1725" y="444" width="1471" height="1080" key="dock-window-2/1080.271.2560.1440/0.0.1080.1675/3640.631.1920.1080@1080.271.2560.1440" timestamp="1607308446756" />
+    <state x="2071" y="745" width="568" height="462" key="refactoring.ChangeSignatureDialog" timestamp="1607377199169">
+      <screen x="1080" y="225" width="2560" height="1440" />
+    </state>
+    <state x="2071" y="745" width="568" height="462" key="refactoring.ChangeSignatureDialog/1080.225.2560.1440/0.0.1080.1675@1080.225.2560.1440" timestamp="1607377199169" />
   </component>
 </project>

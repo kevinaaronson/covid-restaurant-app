@@ -13,7 +13,7 @@
 
 
 
-        function __construct ($id = null, $name, $address, $phone, $cuisine_id, $picture = "", $total_rating = 0, $rating_count = 0, $description = "")
+        function __construct ($id = null, $name, $address, $phone, $cuisine_id, $picture, $total_rating = 0, $rating_count = 0, $description = "")
         {
             $this->id = $id;
             $this->name = $name;
@@ -222,13 +222,14 @@
             return $found_restaurant;
         }
 
-        function updateRestaurant($edit_name, $edit_address, $edit_phone, $edit_cuisine_id, $edit_picture)
+        function updateRestaurant($edit_name, $edit_address, $edit_phone, $edit_cuisine_id, $edit_picture, $edit_description)
         {
-            $GLOBALS['DB']->exec("UPDATE restaurants SET name = '{$edit_name}', address = '{$edit_address}', phone = '{$edit_phone}', cuisine_id = '{$edit_cuisine_id}', picture = '{$edit_picture}' WHERE id = {$this->getId()};");
+            $GLOBALS['DB']->exec("UPDATE restaurants SET name = '{$edit_name}', address = '{$edit_address}', phone = '{$edit_phone}', cuisine_id = '{$edit_cuisine_id}', picture = '{$edit_picture}', description = '{$edit_description}' WHERE id = {$this->getId()};");
             $this->setName($edit_name);
             $this->setAddress($edit_address);
             $this->setPhone($edit_phone);
             $this->setCuisineId($edit_cuisine_id);
+            $this->setDescription($edit_description);
         }
 
         function deleteRestaurant()
